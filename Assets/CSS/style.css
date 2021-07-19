@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+    margin: 0px;
+    padding: 0px;
+    background-image: linear-gradient(to bottom right,red,white);
+    background-repeat: no-repeat;
+  }
+  
+  
+  #main{
+    width: 100%;
+    height: 30vh;
+    position: relative;
+  }
+  
+  .nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 10px 30px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-right: 60%;
+  }
+  
+  
+  .logo img{
+    height: 100px;
+    position: relative;
+    animation-name:animate;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+  }
+  
+  @keyframes animate{
+    0%{left:0px;}
+    50%{left:300px;}
+    100%{left:0px;}
+  }
+  
+  .menu{
+    list-style: none;
+    display: flex;
+    margin-left: 60%;
+  }
+  
+  .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 3px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: black;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  .social{
+    list-style: none;
+    display: flex;
+    margin-left: 100%;
+    font-weight: bold;
+  }
+  
+  .social li{
+    display: inline;
+    padding: 0.5rem;
+  }
+  
+  .name{
+    font-weight: bold;
+  }
+  
+  .github img{
+    height: 45px;
+  }
+  
+  .linkedin img{
+    height: 55px;
+  }
+  
+  .creator{
+    margin-left: 0;
+  }
+  
+  .footer{
+    list-style: none;
+    display: flex;
+    height: 40px;
+    margin-top: 5%;
+    margin-bottom: 1rem;
+    font-size: 0.8em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  
+  .contact{
+    text-align: center!important;
+  }
+  
+  .image img{
+    height: 100px;
+    position: relative;
+    animation-name:animez;
+    animation-duration: 4s;
+    animation-iteration-count:infinite;
+  }
+  @keyframes animez{
+    0%{left:0px;top:0px;}
+    25%{left:175px;top:0px;}
+    50%{left:175px;top:200px;}
+    75%{left:-175px;top:200px;}
+    85%{left:-175px;top:0px;}
+    100%{left:0px;top:0px;}
+  }
+  
+  .main-content{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .line{
+    font-family: 'Serif', cursive;
+    font-size: 40px;
+  }
+  
+  .heading{
+    font-family: 'Sans Serif', cursive;
+    font-size: 50px;
+  }
+  
+  .start{
+    font-family: 'Reggae One', cursive;
+    background-color: blueviolet;
+    color: white;
+    padding: 15px 45px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border: 2px solid indigo;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .start:hover{
+    background-color: whitesmoke;
+    color: blueviolet;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .menu li a:hover{
+    background-color: rgb(27, 190, 219);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+  }
+  
+  .github img:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .linkedin img:hover{
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    -moz-opacity: 0.5;
+    opacity: 0.5;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .line2{
+    display: flex;
+    font-family: 'Itim', cursive;
+    font-size: 30px;
+  }
